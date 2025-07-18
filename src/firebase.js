@@ -7,14 +7,22 @@ import {
 } from "firebase/messaging";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
-  measurementId: "",
+	// apiKey: "",
+	// authDomain: "",
+	// projectId: "",
+	// storageBucket: "",
+	// messagingSenderId: "",
+	// appId: "",
+	// measurementId: "",
+	apiKey: "AIzaSyAVFd8_6NSn5UTrxlc54iXDSDbNIvAC3vE",
+  authDomain: "naturalganic.firebaseapp.com",
+  projectId: "naturalganic",
+  storageBucket: "naturalganic.appspot.com",
+  messagingSenderId: "414638876211",
+  appId: "1:414638876211:web:b156e1289a297138c3a546",
+  measurementId: "G-8PT7CDXR0L"
 };
+
 const firebaseApp = !getApps().length
   ? initializeApp(firebaseConfig)
   : getApp();
